@@ -1,0 +1,25 @@
+﻿<!-- Advanced Software and Web Developer Diploma -->
+<!-- Part X: C# and .NET Framework - Part 2 -->
+<!-- by Pitman Training / The Tech Academy -->
+
+<!-- MODULE 12: ASP.NET MVC Entity Framework Assignment -->
+<!-- AUTHOR: Steven Partlow -->
+<!-- DATE: 11/03/2023 -->
+
+<!-- MAIN INDEX PAGE FOR HOME VIEW -->
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+
+    <!-- MAIN LANDING PAGE HEADER -->
+
+    <h1>TA CAR INSURANCE</h1> <!-- MAIN PAGE HEADER TEXT -->
+    <p class="lead">Get your car insurance quote from us today!</p>
+    <a href='@Url.Action("Create", "Insuree")'> <!-- Click on this button to execute the Create() method within the Insuree controller -->
+        <input type='button' value='Get Your Quote!' class="btn btn-primary btn-lg">
+    </a>
+
+</div> <!-- End DIV Jumbotron -->

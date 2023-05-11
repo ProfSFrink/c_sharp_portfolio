@@ -1,0 +1,54 @@
+﻿<!-- Advanced Software and Web Developer Diploma -->
+<!-- Part X: C# and .NET Framework - Part 2 -->
+<!-- by Pitman Training / The Tech Academy -->
+
+<!-- MODULE 11: Creating MVC Applications -->
+<!-- AUTHOR: Steven Partlow -->
+<!-- DATE: 28/02/2023 -->
+
+<!-- CONTAINER FOR THE SIGN UP CARD -->
+
+<div class ="row no-gutters m-3"> <!-- Use a row with no margins on either side and a 3em margin -->
+
+    <!-- CARD -->
+    <!-- Set to 12 columns on a small display, 10 on medium display, 6 on a large one, auto centure along the x-axsis and add a shadow -->
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow"> 
+
+        <!-- CARD HEADER -->
+        <div class="card-header text-center"> <!-- Add a centered card header to the display -->
+            <h5 class="m-0">Sign up to our newsletter</h5> <!-- Display this text in headline 5 with no margins -->
+        </div> <!-- END DIV CARD HEADER-->
+
+        <!-- CARD BODY-->
+        <div class="card-body">
+            <!-- HTML Form for Newsletter signup using a HTML helpder-->
+            @using (Html.BeginForm("SignUp", "Home", FormMethod.Post)) // Use SignUp method within the home controller, the form with use a POST request
+            {
+                <!-- CONTAINER FOR THE SIGN UP -->
+                <div class="row no-gutters"> <!-- Use a row with no margins on either side -->
+                
+                    <!-- FIRST NAME INPUT BOX -->
+                    <div class="form-group col-md-12 p-2"> <!-- Use form-group and make input 12 columns in width 2em padding at the the bottom -->
+                        <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+                    </div> <!-- END DIV FIRST NAME INPUT-->
+
+                    <!-- LAST NAME INPUT BOX -->
+                    <div class="form-group col-md-12 p-2"> <!-- Use form-group and make input 12 columns in width 2em padding at the the bottom 2em padding at the the bottom -->
+                        <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+                    </div> <!-- END DIV LAST NAME INPUT-->
+
+                    <!-- EMAIL ADDRESS INPUT BOX -->
+                    <div class="form-group col-md-12 p-2"> <!-- Use form-group and make input 12 columns in width 2em padding at the the bottom2em padding at the the bottom -->
+                        <input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" />
+                    </div> <!-- END DIV EMAIL ADDRESS INPUT-->
+
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit" class="btn btn-block btn-primary">Submit</button> <!-- Make button length of container using primary colour -->
+
+                </div> <!-- END DIV SUBMIT FORM CONTAINER -->
+            }
+        </div> <!-- END DIV CARD BODY-->
+
+    </div> <!-- END DIV CARD-->
+
+</div> <!-- END DIV CONTAINTER FOR THE SIGN UP CARD -->

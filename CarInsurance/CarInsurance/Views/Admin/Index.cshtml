@@ -1,0 +1,65 @@
+﻿<!-- Advanced Software and Web Developer Diploma -->
+<!-- Part X: C# and .NET Framework - Part 2 -->
+<!-- by Pitman Training / The Tech Academy -->
+
+<!-- MODULE 12: ASP.NET MVC Entity Framework Assignment -->
+<!-- AUTHOR: Steven Partlow -->
+<!-- DATE: 11/03/2023 -->
+
+<!-- MAIN INDEX PAGE FOR ADMIN VIEW -->
+
+@using CarInsurance.ViewModels <!-- Use our AllQuotes View Model -->
+@model List<QuotesVm> /* The model this page will use is a list of AllQuotes View Model objects */
+
+<body class="adminview">
+
+    <!-- Create a row with no margin on either side and 3em margin at the top and bottom -->
+    <div class="row no-gutters m-3 bg-secondary">
+
+        <h1 class="display-1 m-0 text-center">ADMIN: ALL QUOTES ISSUED</h1>
+
+        <hr />
+
+        @foreach (var quote in Model) /* Iterate through the passed in model and assign each element to the local instance of the model quote */
+        {
+
+            <!-- Create a card which scale the number of columns depending on the size of the display that is auto-centered and has a shadow effect-->
+            <div class="admincard card col-sm-12 col-md-10 col-lg-6 border-5">
+
+                <!-- Card header with h3 tag and no margin again centering the text -->
+                <div class="card-header bg-primary">
+                    <h3>INSUREE DETAILS</h3>
+                </div>
+
+                <div class="card-body bg-secondary">
+                    <!-- The body of the card -->
+                    <!-- Display the insuree information as a descriptive list -->
+                    <dl class="row">
+
+                        <!-- Diplay the current instance of quote.FirstName with a label -->
+                        <dt class="col-sm-3">FIRST NAME:</dt>
+                        <dd class="col-sm-9">@quote.FirstName</dd>
+
+                        <!-- Diplay the current instance of quote.LastName with a label -->
+                        <dt class="col-sm-3">LAST NAME:</dt>
+                        <dd class="col-sm-9">@quote.LastName</dd>
+
+                        <!-- Diplay the current instance of quote.EmailAddress with a label -->
+                        <dt class="col-sm-3">EMAIL:</dt>
+                        <dd class="col-sm-9">@quote.EmailAddress</dd>
+
+                        <!-- Diplay the current instance of quote.Quote with a label, we also round the quote to two decimal places -->
+                        <dt class="col-sm-3">QUOTE:</dt>
+                        <dd class="col-sm-9">@decimal.Round(quote.Quote, 2, MidpointRounding.AwayFromZero)</dd>
+
+                    </dl>
+
+                </div> <!-- End DIV Card Body-->
+
+            </div> <!-- End DIV Card-->
+        }
+
+
+    </div> <!-- End DIV Row -->
+
+</body>

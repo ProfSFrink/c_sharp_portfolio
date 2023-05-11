@@ -1,0 +1,37 @@
+﻿<!-- Advanced Software and Web Developer Diploma -->
+<!-- Part X: C# and .NET Framework - Part 2 -->
+<!-- by Pitman Training / The Tech Academy -->
+
+<!-- MODULE 11: Creating MVC Applications -->
+<!-- AUTHOR: Steven Partlow -->
+<!-- DATE: 26/02/2023 -->
+<!-- INSTRUCTOR VIEW -->
+
+@model StudentMVC.Models.Instructor
+
+@{
+    ViewBag.Title = "Instructor";
+}
+
+<h2>Instructor</h2>
+
+<h5>
+    Details for Instructor with ID: @ViewBag.Id <!-- Retrieve value of Id key stored in ViewBag dictionary -->
+</h5>
+
+<p>
+    Further details about the Instructor:
+</p>
+
+<ul>
+    <li>
+        Another Id: @Model.Id
+    </li>
+    <li>
+        First Name: @Model.FirstName
+    </li>
+    <li>
+        Last Name: @Model.LastName
+    </li>
+</ul>
+

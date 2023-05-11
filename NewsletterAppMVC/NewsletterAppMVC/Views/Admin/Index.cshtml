@@ -1,0 +1,63 @@
+﻿<!-- Advanced Software and Web Developer Diploma -->
+<!-- Part X: C# and .NET Framework - Part 2 -->
+<!-- by Pitman Training / The Tech Academy -->
+<!-- MODULE 12: Continuing to Develop in C# and MVC -->
+<!-- AUTHOR: Steven Partlow -->
+<!-- DATE: 06/03/2023 -->
+
+@using NewsletterAppMVC.ViewModels <!-- Use the models defined in our Models folder -->
+@model List<SignupVm> /* Create a list of the NewsletterSignUp class */
+
+<div class="row no-gutters m-3">
+    <!-- Create a row with no margin on either side and 3em margin at the top and bottom -->
+
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <!-- Create a card which scale the number of columns depending on the size of the display that is auto-centered and has a shadow effect-->
+
+        <div class="card-header text-center">
+            <!-- Card header with h5 tag and no margin again centering the text -->
+            <h5 class="m-0">Sign-ups</h5>
+        </div> <!-- END DIV Card header -->
+
+        <div class="card-body">
+            <!-- The body of the card -->
+            @foreach (var signup in Model) /* Assign each instance of the NewsletterSignUp list from our Model to the variable signup */
+            {
+                using (Html.BeginForm("Unsubscribe", "Admin", FormMethod.Post))
+                {
+                    <input type="hidden" name="id" value="@signup.Id" />
+                    <div class="row mb-3">
+                        <!-- Create a row on the page -->
+
+                        <div class="col-2">
+                            <!-- In this column, display the FirstName property of the current instance of the Model in signup -->
+                            @signup.FirstName
+                        </div> <!-- END DIV FirstName -->
+
+                        <div class="col">
+                            <!-- In this column, display the LastName property of the current instance of the Model in signup -->
+                            @signup.LastName
+                        </div> <!-- END DIV LastName -->
+
+                        <div class="col-4">
+                            <!-- In this column, display the EmailAddress property of the current instance of the Model in signup -->
+                            @signup.EmailAddress
+                        </div> <!-- END DIV EmailAddress -->
+
+                        <div class="col">
+                            <!-- In this column, display a button called Unsubscribe  -->
+                            <button type="submit" class="btn btn-danger btn-block">
+                                Unsubscribe
+                            </button> <!-- END BUTTON Unsubscribe -->
+                        </div> <!-- END DIV Unsubscribe -->
+
+                    </div> <!-- END DIV SignUp Row -->
+                }
+
+            }
+
+        </div> <!-- END DIV Card Body -->
+
+    </div> <!-- END DIV Card -->
+
+</div> <!-- END DIV Row-->

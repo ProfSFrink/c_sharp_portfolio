@@ -1,0 +1,111 @@
+﻿/*  Advanced Software and Web Developer Diploma
+    Part X: C# and .NET Framework - Part 2
+    by Pitman Training / The Tech Academy
+
+    MODULE 12: ASP.NET MVC Entity Framework Assignment
+    AUTHOR: Steven Partlow
+    DATE: 13/03/2023
+
+    CSS Styling
+*/
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* CUSTOM CSS STYLING */
+
+/* INSUREE INDEX VIEW */
+
+th { /* EFFECTS STYLING FOR TABLE HEADING */
+    color: white; /* Set text colour to white */
+    background-color: dodgerblue; /* Set the background colour to doger blue */
+}
+
+td { /* EFFECTS STYLING FOR TABLE DATA */
+    font-weight: 700; /* Bold the text */
+    background-color: lightgrey; /* Set the background colour to lightgrey */
+}
+
+/* CREATE VIEW STYLING */
+
+.form-horizontal { /* Styling for the main form */
+    border: 3px solid black; /* Give the form a 3 pixel solid black border */
+    padding-left: 5px; /* Add 5 pixels of padding to the left of the form */
+    box-shadow: 2px 2px grey; /* Give form a slight grey box shadow */
+}
+
+.control-label { /* Styling for the form labels */
+    color: dodgerblue; /* Make the label text doger blue */
+    text-shadow: 1px 1px black; /* Give the label text a slight black shadow effect */
+}
+
+.form-control { /* Styling for the form input boxes */
+    box-shadow: 1px 1px black; /*Give each input box a slight black shadow effect */
+}
+
+.btn { /*Styling for application buttons */
+    box-shadow: 1px 1px black; /* Give buttons a slight shadow effect */
+    font-weight: 700; /* Bold the button text */
+}
+
+/* ADMIN VIEW STYLING */
+
+.adminview { /* Main page styling */
+    background-color: ghostwhite; /* Set the admin view page background to ghostwhite */
+}
+
+.admincard { /* Styling for the individual cards that appear in the admin view */
+    background-color: lightyellow; /* Set each cards background colour to lightyellow */
+    border: 2px solid black; /* Give each card a solid black 2px border */
+    border-radius: 10px; /* Curve the edges of the border slightly */
+    box-shadow: 3px 3px grey; /* Give each card a grey shadow effect */
+    margin-bottom: 4px; /* Place a 4 pixel margin at the bottom of each card */
+}
+
+.adminview h1, h3 { /* Styling for h1 and h3 tags in the admin view */
+    text-shadow: 1px 1px black; /* Give h tags a slight black shadow effect */
+}
+
+.adminview h3 { /* Styling for headers of each admin view card */
+    border: 2px solid black; /* Give each card header a 2px solid black border */
+    padding-left: 3px; /* add a little padding to each card header on the left */
+    box-shadow: 2px 2px black; /* Give the header text a black shadow effect */
+}
+
+.card-body { /* Styling for the body of each admin card */
+    margin-left: 15px; /* Place a 15 pixel margin on the left of the card */
+    margin-right: 15px; /* Place a 15 pixel margin on the right of the card */
+}
+
+dl { /* Styling for the list of insuree data in each card */
+    background-color: lightblue; /* Set the background colour to lightblue */
+    margin-left: 3px; /* Add a 3 pixel margin to the left of each card */
+    border: solid 1px black; /* Give the card a black border */
+    box-shadow: 2px 2px black; /* Give the card a black box shadow effect */
+}
+
+dt { /* Styling for the admin view box text labels */
+    text-shadow: 1px 1px grey; /* Give the labels a shadow effect */
+}

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_NewsletterModelStoreContainer" CdmEntityContainer="db_NewsletterEntities">
+    <EntitySetMapping Name="SignUps">
+      <EntityTypeMapping TypeName="db_NewsletterModel.SignUp">
+        <MappingFragment StoreEntitySet="SignUps">
+          <ScalarProperty Name="Removed" ColumnName="Removed" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
