@@ -18,7 +18,7 @@ A blackjack game developed as a .NET framework console application. The applicat
 
 ### __IMPLEMENTS: ASP.NET, Model-View-Controller Desgin Pattern, Entity Framework, Database Logging, Bootstrap__
 
-A ASP.NET web application allowing for people to sign-up for a newsletter. This application was creating implementing the MVC (Model-View-Controller) design pattern, the main index view allows for new sign-ups and implements data validation to ensure correct data entry by the user, the application also implements an administrator view, which is implemented using a view model to control which data the admin can see, this view also allows the admin to remove a signup from the database. The Home controller logs new sign-ips into SQL database, all database handling it achieved through use of the Entity framework, and an admin controller is implemented for to power the admin view, also the CSS for the views makes use of bootstrap.  
+An ASP.NET web application allowing for people to sign-up for a newsletter. This application was creating implementing the MVC (Model-View-Controller) design pattern, the main index view allows for new sign-ups and implements data validation to ensure correct data entry by the user, the application also implements an administrator view, which is implemented using a view model to control which data the admin can see, this view also allows the admin to remove a signup from the database. The Home controller logs new sign-ips into SQL database, all database handling it achieved through use of the Entity framework, and an admin controller is implemented for to power the admin view, also the CSS for the views makes use of bootstrap.  
 
 &nbsp;
 ## __Car Insurance Quote Generator - ASP.NET MVC Web Application__ [(CODE)](https://github.com/ProfSFrink/c_sharp_portfolio/tree/master/CarInsurance/CarInsurance)
@@ -38,7 +38,7 @@ Another ASP.NET web application, this generates a car insurance quote based on d
 ### __IMPLEMENTS: ASP.NET, Object-Orientated Programming, Code-First Entity FW Implementation, Database Logging, Bootstrap__
 
 &nbsp;
-A simple wxample of a code-first database implementation. We create student and grade classes, then a school class which we use as the base to create our database tables using the student and grades classes as templates. We then create three instances of the student objects, give them a course and a grade and log them to our newly created student database.
+A simple example of a code-first database implementation. We create student and grade classes, then a school class which we use as the base to create our database tables using the student and grades classes as templates. We then create three instances of the student objects, give them a course and a grade and log them to our newly created student database.
 
 ## __FizzBuzz Problem__ [(CODE)](https://github.com/ProfSFrink/c_sharp_portfolio/tree/master/FizzBuzz/FizzBuzz/FizzBuzz)
 
