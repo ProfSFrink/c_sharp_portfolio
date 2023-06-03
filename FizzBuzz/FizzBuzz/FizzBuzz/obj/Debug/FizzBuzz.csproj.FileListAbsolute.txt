@@ -1,0 +1,7 @@
+C:\Users\ProfS\OneDrive\Personal\personal_repos\c_sharp_portfolio\FizzBuzz\FizzBuzz\FizzBuzz\bin\Debug\FizzBuzz.exe.config
+C:\Users\ProfS\OneDrive\Personal\personal_repos\c_sharp_portfolio\FizzBuzz\FizzBuzz\FizzBuzz\bin\Debug\FizzBuzz.exe
+C:\Users\ProfS\OneDrive\Personal\personal_repos\c_sharp_portfolio\FizzBuzz\FizzBuzz\FizzBuzz\bin\Debug\FizzBuzz.pdb
+C:\Users\ProfS\OneDrive\Personal\personal_repos\c_sharp_portfolio\FizzBuzz\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.csproj.AssemblyReference.cache
+C:\Users\ProfS\OneDrive\Personal\personal_repos\c_sharp_portfolio\FizzBuzz\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.csproj.CoreCompileInputs.cache
+C:\Users\ProfS\OneDrive\Personal\personal_repos\c_sharp_portfolio\FizzBuzz\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.exe
+C:\Users\ProfS\OneDrive\Personal\personal_repos\c_sharp_portfolio\FizzBuzz\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.pdb

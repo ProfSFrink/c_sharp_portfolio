@@ -8,7 +8,7 @@ This is a collection of the C# and .NET projects that I have as part of my portf
 
 ---
 
-### __IMPLEMENTS: Object-Orientated Programming, ADO.NET, Exception Handling with Database Logging__ 
+### __IMPLEMENTS: Object-Orientated Programming, ADO.NET, Exception Handling with Database Logging__
 
 A blackjack game developed as a .NET framework console application. The application consists of the main TwentyOne game application with the rest of the application stored in casino library. This library is designed so that the base classes to represent the playing cards and player / dealer decks can be reused in other card games. We establish a base set of rules for card games which can be reused in other card games later. Then we have the main logic for the blackjack game itself, with one class for the games rules, dealer behaviour and the main game logic. The application enacts data validation implemented through try catch / blocks and logging of exceptions, these are logged into an exception object and logged to a database through use of ADO.NET. The program implements the three pillars of object-orientated programming encapsulation, inheritance, and polymorphism in the implementation of it's various classes.
 

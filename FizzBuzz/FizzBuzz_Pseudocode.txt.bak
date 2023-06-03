@@ -1,0 +1,25 @@
+# FizzBuzz Problem Pseudocode
+# by Steven Partlow
+
+WHILE The user has not entered a whole number
+
+	TRY Ask the user to enter a number
+		PRINT Please enter a whole number
+		READ Take user input and assign to (num)
+		
+	EXCEPT A format exception occurs becuase the user has not entered a whole number
+		PRINT You must enter a whole number, please try again!
+		WHILE Go back to the beginining of the loop
+		
+	ELSE Once the user has correctly entered a whole number
+	
+		FOR Start at 1 an iterate upto and including the number entered by the user (num)
+		IF (num) is divisable by both 3 and 5
+			PRINT FizzBuzz then value of (num)
+		ELSEIF (num) is divisable by 3
+			PRINT Fizz then value of (num)
+		ELSEIF (num) is divisable by 5
+			PRINT Buzz then value of (num)
+			
+ENDWHILE As the program has been executed successfully
+	

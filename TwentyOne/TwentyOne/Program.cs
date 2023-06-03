@@ -1,4 +1,4 @@
-﻿ // Advanced Software and Web Developer Diploma
+﻿// Advanced Software and Web Developer Diploma
 // Part X: C# and .NET Framework - Part 2
 // by Pitman Training / The Tech Academy
 
