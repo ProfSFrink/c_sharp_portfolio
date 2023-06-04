@@ -1,6 +1,6 @@
 ﻿// FizzBuzz
 // by Steven Partlow
-// DATE: 01/06/2023
+// DATE: 02/06/2023
 
 /* A C# version of the FizzBuzz problem, uses a TRY / CATCH block to exceptions, check that the number entered is a whole number with no
  decimal places , then checks for FizzBuzz (divisable by 3 and 5), Fizz (divisable by 3) and Buzz (divisable by 5) before a general message 
@@ -63,35 +63,8 @@ namespace FizzBuzz
 
                 // End of CATCH Block
 
-                // FizzBuzz LOGIC
-                if (userNum % 3 == 0 && userNum % 5 == 0) // If the the value the user entered is divisable by three and five then
-                {
-                    Console.WriteLine("\nFizzBuzz"); // Output 'FizzBuzz' to the console
-                    Console.WriteLine("\nThe application will now exit, Press any KEY to continue.\n"); // Output this text to the console
-                    Console.ReadKey(); // Peuse the application until the user presses a key
-                    break; // Break the WHILE loop
-                } // End IF
-                else if (userNum % 3 == 0) // If the the value the user entered is divisable by three then
-                {
-                    Console.WriteLine("\nFizz"); // Output 'Fizz' to the console
-                    Console.WriteLine("\nThe application will now exit, Press any KEY to continue.\n"); // Output this text to the console
-                    Console.ReadKey(); // Peuse the application until the user presses a key
-                    break; // Break the WHILE loop
-                } // End ELSE IF
-                else if (userNum % 5 == 0) // If the the value the user entered is divisable by five then
-                {
-                    Console.WriteLine("\nBuzz"); // Output 'Buzz' to the console
-                    Console.WriteLine("\nThe application will now exit, Press any KEY to continue.\n"); // Output this text to the console
-                    Console.ReadKey(); // Peuse the application until the user presses a key
-                    break; // Break the WHILE loop
-                } // End ELSE IF
-                else // If none of the the three condition above are met
-                {
-                    Console.WriteLine("\nSorry not Fizz or Buzz :("); // Output this text to the console
-                    Console.WriteLine("\nThe application will now exit, Press any KEY to continue.\n"); // Output this text to the console
-                    Console.ReadKey(); // Peuse the application until the user presses a key
-                    break; // Break the WHILE loop
-                } // End ELSE
+                FizzBuzz.FizzBuzzLogic(userNum);
+                break;
 
             } //End WHILE
 
