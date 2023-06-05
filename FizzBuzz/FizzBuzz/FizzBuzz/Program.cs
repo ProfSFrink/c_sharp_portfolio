@@ -63,8 +63,8 @@ namespace FizzBuzz
 
                 // End of CATCH Block
 
-                FizzBuzz.FizzBuzzLogic(userNum);
-                break;
+                FizzBuzz.FizzBuzzLogic(userNum); // Execute the FizzBuzzLogic method of the FizzBuzz class passing in the value of userNum
+                break; // As we have successfully validated the user input and run the FizzBuzz logic, we can break the loop and end the application
 
             } //End WHILE
 
