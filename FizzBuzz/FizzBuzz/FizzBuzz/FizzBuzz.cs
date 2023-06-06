@@ -23,7 +23,7 @@ namespace FizzBuzz
                 else if (i % 5 == 0) Sequence += "Buzz"; // If i is divisable by 5 with no remainder we add "Buzz" to the sequence
                 else Sequence += i; // If it is not divisable by either with just add the current value of i to the sequence
 
-                if (i < M) Sequence += ", "; // If we are not equal to M yet, we add a comma and a space to sequence
+                if (i < M) Sequence += ", "; // If we are not equal to M yet, we add a comma and a space to sequence, this ensures no comma on the end of the string
             } // End FOR
 
             return Sequence; // Now that the FORR loop has ended we return the value of sequence
