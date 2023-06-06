@@ -1,12 +1,13 @@
 ﻿// FizzBuzz
 // by Steven Partlow
-// DATE: 02/06/2023
+// DATE: 06/06/2023
 
-/* A C# version of the FizzBuzz problem, uses a TRY / CATCH block to exceptions, check that the number entered is a whole number with no
- decimal places , then checks for FizzBuzz (divisable by 3 and 5), Fizz (divisable by 3) and Buzz (divisable by 5) before a general message 
-if none of those three apply, then the program ends */
+/* A C# version of the FizzBuzz problem, uses a TRY / CATCH block to exceptions, check that the numbers entered are whole numbers with no
+ decimal places , then checks for FizzBuzz (divisable by 3 and 5), Fizz (divisable by 3) and Buzz (divisable by 5), or if none of those apply,
+ adding each result to a string before outputting the result */
 
 using System;
+using FizzBuzz;
 
 namespace FizzBuzz
 {
@@ -19,25 +20,41 @@ namespace FizzBuzz
             while (true)
             {
 
-                double userNum; // Define variable userNum as a double data type
+                double startNum; // Define variable startNum as a double data type, this represents the start of the range
+                double endNum; // Define variable endNum as a double data type, this represents the end of the range
                 try // Try this code, get the user to enter a whole number and catch any errors
                 {
                     // Output the following text to the console
                     Console.WriteLine("FizzBuzz");
                     Console.WriteLine("--------\n");
 
-                    Console.Write("Please enter a WHOLE number: "); // Ask the user to enter a whole number
-                    userNum = Convert.ToDouble(Console.ReadLine()); // Take the inputted user string, convert to type int and store in variable userNum
+                    Console.Write("Please enter the NUMBER for START of the RANGE: "); // Ask the user to enter a whole number
+                    startNum = Convert.ToDouble(Console.ReadLine()); // Take the inputted user string, convert to type int and store in variable startNum
 
-                    bool isInt = userNum == (int)userNum; // Check if the number entered is a whole number with no decimal places
-                    if (isInt == false) // If it is not a whole number
+                    bool startInt = startNum == (int)startNum; // Check if the number entered is a whole number with no decimal places
+                    if (startInt == false) // If it is not a whole number
                     {
                         Console.WriteLine("\nPlease enter a WHOLE, no decimal places, Please try again!.\n"); // Output this text to the console
                         continue; // Restart the loop and get the user enter a number again
                     } // End IF
-                    else if (userNum == 0)
+                    else if (startNum == 0)
                     {
-                        Console.WriteLine("\nPlease do not enter a ZERO, Thank You!.\n"); // Output this text to the console
+                        Console.WriteLine("\nPlease do not enter a ZERO, enter as least 1, Thank You!.\n"); // Output this text to the console
+                        continue; // Restart the loop and get the user enter a number again
+                    } // End ELSE IF
+
+                    Console.Write("Please enter the NUMBER for the END of the RANGE: "); // Ask the user to enter a whole number
+                    endNum = Convert.ToDouble(Console.ReadLine()); // Take the inputted user string, convert to type int and store in variable startNum
+
+                    bool endInt = endNum == (int)endNum; // Check if the number entered is a whole number with no decimal places
+                    if (endInt == false) // If it is not a whole number
+                    {
+                        Console.WriteLine("\nPlease enter a WHOLE, no decimal places, Please try again!.\n"); // Output this text to the console
+                        continue; // Restart the loop and get the user enter a number again
+                    } // End IF
+                    else if (endNum == 0)
+                    {
+                        Console.WriteLine("\nPlease do not enter a ZERO, enter as least 1, Thank You!.\n"); // Output this text to the console
                         continue; // Restart the loop and get the user enter a number again
                     } // End ELSE IF
 
@@ -63,8 +80,11 @@ namespace FizzBuzz
 
                 // End of CATCH Block
 
-                FizzBuzz.FizzBuzzLogic(userNum); // Execute the FizzBuzzLogic method of the FizzBuzz class passing in the value of userNum
-                break; // As we have successfully validated the user input and run the FizzBuzz logic, we can break the loop and end the application
+                // Execute the FizzBuzzLogic method of the FizzBuzz class passing in both startNum and endNum as converted integers, store the returned string in sequence
+                string sequence = FizzBuzz.FizzBuzzLogic(Convert.ToInt32(startNum), Convert.ToInt32(endNum));
+
+                Console.WriteLine(sequence); // Output the value of sequence to the console
+                break; // As we have successfully validated the user input and run the FizzBuzz logic, and displayed the result, we can break the loop and end the application
 
             } //End WHILE
 
