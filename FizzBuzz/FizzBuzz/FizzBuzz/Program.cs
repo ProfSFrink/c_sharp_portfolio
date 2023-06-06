@@ -28,8 +28,12 @@ namespace FizzBuzz
                     Console.WriteLine("FizzBuzz");
                     Console.WriteLine("--------\n");
 
+                    /* Ask the user for the number to START the RANGE */
+
                     Console.Write("Please enter the NUMBER for START of the RANGE: "); // Ask the user to enter a whole number
                     startNum = Convert.ToDouble(Console.ReadLine()); // Take the inputted user string, convert to type int and store in variable startNum
+
+                    // CHECK IF NUMBER ENTERED IS A WHOLE NUMBER AND IS NOT ZERO
 
                     bool startInt = startNum == (int)startNum; // Check if the number entered is a whole number with no decimal places
                     if (startInt == false) // If it is not a whole number
@@ -43,8 +47,12 @@ namespace FizzBuzz
                         continue; // Restart the loop and get the user enter a number again
                     } // End ELSE IF
 
+                    /* Ask the user for the number to END the RANGE */
+
                     Console.Write("Please enter the NUMBER for the END of the RANGE: "); // Ask the user to enter a whole number
                     endNum = Convert.ToDouble(Console.ReadLine()); // Take the inputted user string, convert to type int and store in variable startNum
+
+                    // CHECK IF NUMBER ENTERED IS A WHOLE NUMBER AND IS NOT ZERO
 
                     bool endInt = endNum == (int)endNum; // Check if the number entered is a whole number with no decimal places
                     if (endInt == false) // If it is not a whole number
@@ -84,6 +92,7 @@ namespace FizzBuzz
                 string sequence = FizzBuzz.FizzBuzzLogic(Convert.ToInt32(startNum), Convert.ToInt32(endNum));
 
                 Console.WriteLine(sequence); // Output the value of sequence to the console
+                Console.ReadKey(); // Pause the application before exiting
                 break; // As we have successfully validated the user input and run the FizzBuzz logic, and displayed the result, we can break the loop and end the application
 
             } //End WHILE
