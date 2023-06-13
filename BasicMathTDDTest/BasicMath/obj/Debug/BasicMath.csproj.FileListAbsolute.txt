@@ -1,0 +1,8 @@
+D:\repositories\BasicMathTDDTest\BasicMath\bin\Debug\BasicMath.exe.config
+D:\repositories\BasicMathTDDTest\BasicMath\bin\Debug\BasicMath.exe
+D:\repositories\BasicMathTDDTest\BasicMath\bin\Debug\BasicMath.pdb
+D:\repositories\BasicMathTDDTest\BasicMath\obj\Debug\BasicMath.csproj.AssemblyReference.cache
+D:\repositories\BasicMathTDDTest\BasicMath\obj\Debug\BasicMath.csproj.SuggestedBindingRedirects.cache
+D:\repositories\BasicMathTDDTest\BasicMath\obj\Debug\BasicMath.csproj.CoreCompileInputs.cache
+D:\repositories\BasicMathTDDTest\BasicMath\obj\Debug\BasicMath.exe
+D:\repositories\BasicMathTDDTest\BasicMath\obj\Debug\BasicMath.pdb
