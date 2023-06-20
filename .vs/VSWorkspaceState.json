@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FizzBuzz",
     "\\FizzBuzz\\FizzBuzz",
     "\\FizzBuzz\\FizzBuzz\\FizzBuzz"
   ],
-  "SelectedNode": "\\FizzBuzz\\FizzBuzz\\FizzBuzz\\Program.cs",
+  "SelectedNode": "\\Readme.md",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,5 @@
+## __Newsletter Sign-up Web Application - ASP.NET MVC Web Application__ 
+
+### __IMPLEMENTS: ASP.NET, Model-View-Controller Desgin Pattern, Entity Framework, Database Logging, Bootstrap__
+
+An ASP.NET web application allowing for people to sign-up for a newsletter. This application was creating implementing the MVC (Model-View-Controller) design pattern, the main index view allows for new sign-ups and implements data validation to ensure correct data entry by the user, the application also implements an administrator view, which is implemented using a view model to control which data the admin can see, this view also allows the admin to remove a signup from the database. The Home controller logs new sign-ips into SQL database, all database handling it achieved through use of the Entity framework, and an admin controller is implemented for to power the admin view, also the CSS for the views makes use of bootstrap.  

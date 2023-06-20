@@ -3,24 +3,10 @@
 This is a collection of the C# and .NET projects that I have as part of my portfolio thus far, again these vary from smaller code snippets to larger programs. They where all developd in Visual Studio 2019.  
 
 &nbsp;
-## __Blackjack (TwentyOne) Game - .NET Console Application__ [(CODE)](https://github.com/ProfSFrink/c_sharp_portfolio/tree/master/TwentyOne/TwentyOne)
+## __Blackjack (TwentyOne) Game - .NET Console Application__ [(CODE)](https://github.com/ProfSFrink/c_sharp_portfolio/tree/master/TwentyOne/TwentyOne) [(README)](https://github.com/ProfSFrink/c_sharp_portfolio/tree/master/TwentyOne/TwentyOne/Readme.md)
 
----
+## __Newsletter Sign-up Web Application - ASP.NET MVC Web Application__ [(CODE)](https://github.com/ProfSFrink/c_sharp_portfolio/tree/master/NewsletterAppMVC/NewsletterAppMVC) [(README)](https://github.com/ProfSFrink/c_sharp_portfolio/tree/master/NewsletterAppMVC/NewsletterAppMVC/Readme.md)
 
-### __IMPLEMENTS: Object-Orientated Programming, ADO.NET, Exception Handling with Database Logging__
-
-A blackjack game developed as a .NET framework console application. The application consists of the main TwentyOne game application with the rest of the application stored in casino library. This library is designed so that the base classes to represent the playing cards and player / dealer decks can be reused in other card games. We establish a base set of rules for card games which can be reused in other card games later. Then we have the main logic for the blackjack game itself, with one class for the games rules, dealer behaviour and the main game logic. The application enacts data validation implemented through try catch / blocks and logging of exceptions, these are logged into an exception object and logged to a database through use of ADO.NET. The program implements the three pillars of object-orientated programming encapsulation, inheritance, and polymorphism in the implementation of it's various classes.
-
-&nbsp;
-## __Newsletter Sign-up Web Application - ASP.NET MVC Web Application__ [(CODE)](https://github.com/ProfSFrink/c_sharp_portfolio/tree/master/NewsletterAppMVC/NewsletterAppMVC)
-
----
-
-### __IMPLEMENTS: ASP.NET, Model-View-Controller Desgin Pattern, Entity Framework, Database Logging, Bootstrap__
-
-An ASP.NET web application allowing for people to sign-up for a newsletter. This application was creating implementing the MVC (Model-View-Controller) design pattern, the main index view allows for new sign-ups and implements data validation to ensure correct data entry by the user, the application also implements an administrator view, which is implemented using a view model to control which data the admin can see, this view also allows the admin to remove a signup from the database. The Home controller logs new sign-ips into SQL database, all database handling it achieved through use of the Entity framework, and an admin controller is implemented for to power the admin view, also the CSS for the views makes use of bootstrap.  
-
-&nbsp;
 ## __Car Insurance Quote Generator - ASP.NET MVC Web Application__ [(CODE)](https://github.com/ProfSFrink/c_sharp_portfolio/tree/master/CarInsurance/CarInsurance)
 
 ---
